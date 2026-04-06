@@ -14,6 +14,8 @@ final userProvider = StateProvider<UserModel>((ref) => UserModel.demo());
 final dailySummaryProvider = FutureProvider<DailySummary>((ref) async {
   final healthService = ref.watch(healthServiceProvider);
   
+  await healthService.requestPermissions();
+  
   final steps = await healthService.getTodaySteps();
   final heartRate = await healthService.getHeartRate();
   final calories = await healthService.getActiveCalories();
