@@ -1,0 +1,78 @@
+name: fittrack_pro
+description: "FitTrack Pro — Кроссплатформенный фитнес-трекер с интеграцией API здоровья"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Navigation
+  go_router: ^13.0.1
+
+  # Health API (Google Fit + Apple HealthKit)
+  health: ^10.1.1
+
+  # Charts & Graphs
+  fl_chart: ^0.68.0
+
+  # Animations
+  lottie: ^3.1.0
+  animations: ^2.0.11
+
+  # Local Database
+  hive_flutter: ^1.1.0
+
+  # HTTP Client
+  dio: ^5.4.3
+  retrofit: ^4.1.0
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Fonts & Icons
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  iconsax: ^0.0.8
+
+  # Images
+  cached_network_image: ^3.3.1
+
+  # Utils
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
+  equatable: ^2.0.5
+  uuid: ^4.3.3
+
+  # UI
+  shimmer: ^3.0.0
+  sliding_up_panel: ^2.0.0+1
+  percent_indicator: ^4.2.3
+  step_progress_indicator: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  hive_generator: ^2.0.1
+  retrofit_generator: ^8.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  # Шрифты загружаются автоматически через пакет google_fonts
