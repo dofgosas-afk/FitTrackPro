@@ -51,12 +51,12 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
 
-        <!-- Health Connect intent -->
-        <intent-filter>
-            <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"/>
-        </intent-filter>
+            <!-- Health Connect intent — ВНУТРИ activity, а не снаружи -->
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE"/>
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="flutterEmbedding"
